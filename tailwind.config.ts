@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import type { Config } from "tailwindcss";
 
 export default {
@@ -9,8 +11,27 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        blue: {
+          50: "#DFDFF0",
+          75: "#DFDFF2",
+          100: "#F0F2FA",
+          200: "#010101",
+          300: "#4FB7BD",
+        },
+        violet: {
+          300: "#5724FF",
+        },
+        yellow: {
+          100: "#8E983F",
+          300: "#EDFF66",
+        },
+      },
+      fontFamily: {
+        zentry: ["zentry", "sans-serif"],
+        general: ["general", "sans-serif"],
+        "circular-web": ["circular-web", "sans-serif"],
+        "robert-medium": ["robert-medium", "sans-serif"],
+        "robert-regular": ["robert-regular", "sans-serif"],
       },
     },
   },
